@@ -2,39 +2,36 @@
 
 **Just A Rather Very Fat Fish.**
 
-一个面向 Windows 的本地工具预览项目：网页转 Markdown、修改前快照、项目交接与续接，以及一份操作指南。
+给 DeepSeek Harness（DSH）用户的一组 Windows 本地工具：把已保存的网页转成 Markdown、修改文件前留快照、记录项目进度供新会话接着做。
 
-这是原迎新预览包的新版，现统一使用 **JARVFF** 这个名字。**下载下面这一份即可，不需要再装旧迎新包。**
+### [下载 Windows 预览版 ↓](<https://github.com/ANBYYYY/jarvff/releases/download/final-rc-20261128-02/dsh-friend-final-candidate.zip>)
 
-## 下载当前预览版
+这是**脚本与指南包**，不是独立桌面应用，也不包含 DSH。运行脚本需要已有稳定版 **Node.js ≥18.17.0**；仅阅读指南不需要。
 
-### [下载 JARVFF Windows 预览包（ZIP）](<https://github.com/ANBYYYY/dsh-welcome-preview/releases/download/final-rc-20261128-02/dsh-friend-final-candidate.zip>)
+## 开始使用
 
-当前版本：`0.1.0-preview.2-final.rc.20261128.02`（`final-rc-20261128-02`）。
+1. **解压**到一个空白、可写的独立目录，打开根目录的 `从这里开始.md`。
+2. **交给 DSH 助手**：把下面这句话中的路径和任务换成自己的，再发送。
 
-请以上面的直接下载入口为准；GitHub 的 Latest 标签暂时仍指向历史版本，不是本页推荐版本。
+   > 请先阅读 `完整解压路径/从这里开始.md`。我想做：＿＿。先告诉我怎么用、会生成哪些文件，再开始执行。
 
-文件大小：**218855 bytes**；SHA-256：
+3. **按任务选工具**：网页转换处理本地 HTML；快照和交接按指南使用。解压不会自动接入 DSH，也不会自动安装依赖或更改全局设置。
 
-```text
-FB0A0709481ABD909662EF4A640AE2A813740FCF22E2AB7C2EED46597C34BBCA
-```
+<details>
+<summary>想先试一个网页转换演示？</summary>
 
-## 怎么开始
+确认已安装所需 Node.js 后，运行解压目录中的 `welcome/first-use/run-first-use.cmd`。它转换包内自带样页，结果生成在 `welcome/first-use/out/`，不需要拿自己的文件试手。
 
-1. 解压到一个空白、独占、可写的目录，先读包根的《从这里开始》。仅解压不代表 DSH 已加载本包。
-2. 运行程序需要已有的**稳定版 Node.js ≥18.17.0**。当前实测环境为 Windows / Node.js 24.19.0；不代装运行时、不默认修改全局设置。
-3. 环境检查是按任务需要、经同意才启用的选项，不是聊天和阅读文字的统一前置，也不授予权限。业务输出位置需另行确认。
-4. 迎新组件中未带 `welcome/` 前缀的命令应在解压后的 `welcome` 目录执行；若留在整包根目录，须给入口及相关示例路径补齐 `welcome/` 前缀。
+转换自己的网页时，请先把网页保存为本地 HTML；这个工具不直接联网抓取网址。遇到依赖缺失或系统拦截就先停下，不要绕过安全策略。
 
-## 预览范围
+</details>
 
-这是**非稳定预览版**，不是 DSH 安装包。自然采用完整闭环、维护失败后恢复并保留新增用户数据尚未验证；真实 Node.js 18/19、PowerShell 探针成功、跨机器/平台等也未验。请先在独立目录试用，不替代自己的备份；策略或权限拒绝时就停，不绕过。
+## 试用前知道
 
-[查看完整发布说明与已知限制](<https://github.com/ANBYYYY/dsh-welcome-preview/releases/tag/final-rc-20261128-02>)。
+这是**非稳定预览版**，目前只在 Windows / Node.js 24.19.0 下做过有限验证。陌生用户完整使用流程和失败恢复时保住新增数据尚未实测，请在独立目录试用并保留备份。
 
-## 关于与历史
+[发布说明与下载校验](<https://github.com/ANBYYYY/jarvff/releases/tag/final-rc-20261128-02>) · [反馈问题](<https://github.com/ANBYYYY/jarvff/issues>)
 
-本仓只用于预览包与校验值的 Release 分发，不含用户数据或凭据。本项目与深度求索（DeepSeek）不存在隶属、合作、授权或背书关系；自写代码许可见包内 MIT，第三方按各自许可。
+---
 
-[旧迎新预览版](<https://github.com/ANBYYYY/dsh-welcome-preview/releases/tag/welcome-0.1.0-preview.1>)仅保留供历史查阅，不是另一套需要安装的组件。仓库地址和 ZIP 文件名暂沿用旧标识，不影响它们属于同一个项目。
+独立社区项目，与深度求索（DeepSeek）无隶属或授权关系。自写代码采用包内 MIT 许可，第三方内容按各自许可。
